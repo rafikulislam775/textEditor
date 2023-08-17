@@ -32,6 +32,33 @@
           <button id="italic" class="italic">I</button>
           <button id="underline" class="underline">U</button>
         </div>
+        <!-- Middle content -->
+        <div class="flex justify-center space-x-2">
+          <button><i id="left" class="fa-solid fa-align-left"></i></button>
+          <button><i id="center" class="fas fa-align-center"></i></button>
+          <button><i id="right" class="fa-solid fa-align-right"></i></button>
+          <button>
+            <i id="justify" class="fa-solid fa-align-justify"></i>
+          </button>
+        </div>
+        <!-- Right sidebar -->
+        <div class="flex justify-end space-x-2">
+          <input
+            id="font-size"
+            class="w-8 rounded-sm bg-black text-white"
+            type="number"
+          />
+          <!-- <select class="rounded-sm text-white">
+                    <option>AB</option>
+                    <option>ab</option>
+                </select> -->
+          <select id="text-case" class="rounded-sm text-white">
+            <option value="none">Normal</option>
+            <option value="uppercase">Uppercase</option>
+            <option value="lowercase">Lowercase</option>
+          </select>
+          <input id="pick-color" class="rounded" type="color" />
+        </div>
       </main>
     </section>
     <script src="./script.js"></script>
