@@ -27,10 +27,10 @@
     <section
       class="bg-sky-200 border-2 border-black w-9/12 m-auto space-y-4 p-4"
     >
-      <main class="grid grid-cols-3 w-full">
+      <main class="grid grid-cols-3 w-full text-black">
         <!-- Formatting buttons -->
         <div class="flex justify-start space-x-2">
-          <button id="bold" class="font-bold">B</button>
+          <button id="bold" class="font-bold ">B</button>
           <button id="italic" class="italic">I</button>
           <button id="underline" class="underline">U</button>
         </div>
@@ -47,19 +47,22 @@
         <div class="flex justify-end space-x-2">
           <input
             id="font-size"
-            class="w-8 rounded-sm bg-black text-white"
+            class="w-8 rounded bg-sky-200 border-2 border-black text-black"
             type="number"
           />
           <!-- <select class="rounded-sm text-white">
                     <option>AB</option>
                     <option>ab</option>
                 </select> -->
-          <select id="text-case" class="rounded-sm text-white">
+          <select
+            id="text-case"
+            class="rounded bg-sky-200 border-2 border-black text-black"
+          >
             <option value="none">Normal</option>
             <option value="uppercase">Uppercase</option>
             <option value="lowercase">Lowercase</option>
           </select>
-          <input id="pick-color" class="rounded" type="color" />
+          <input id="pick-color" class="rounded bg-sky-200 border-2 border-black" type="color" />
         </div>
       </main>
       <hr
