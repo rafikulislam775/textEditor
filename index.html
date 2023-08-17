@@ -24,8 +24,10 @@
       </h1>
     </header>
 
-    <section>
-      <main>
+    <section
+      class="bg-sky-200 border-2 border-black w-9/12 m-auto space-y-4 p-4"
+    >
+      <main class="grid grid-cols-3 w-full">
         <!-- Formatting buttons -->
         <div class="flex justify-start space-x-2">
           <button id="bold" class="font-bold">B</button>
@@ -60,6 +62,16 @@
           <input id="pick-color" class="rounded" type="color" />
         </div>
       </main>
+      <hr
+        class="w-full h-1 my-4 bg-gray-100 border-0 rounded dark:bg-gray-700"
+      />
+      <!-- Text area -->
+      <div class="w-full">
+        <textarea
+          id="textArea"
+          class="bg-slate-500 text-white p-2 w-full h-40"
+        ></textarea>
+      </div>
     </section>
     <script src="./script.js"></script>
   </body>
