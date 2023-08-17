@@ -12,3 +12,24 @@ document.getElementById("italic").addEventListener("click", function () {
 document.getElementById("underline").addEventListener("click", function () {
   textArea.style.textDecoration = "underline";
 });
+
+// text alignment
+document.getElementById("left").addEventListener("click", function () {
+  textArea.style.textAlign = "left";
+});
+document.getElementById("center").addEventListener("click", function () {
+  textArea.style.textAlign = "center";
+});
+document.getElementById("right").addEventListener("click", function () {
+  textArea.style.textAlign = "right";
+});
+document.getElementById("justify").addEventListener("click", function () {
+  textArea.style.textAlign = "justify";
+});
+
+// text sizing .addEventListener('input',function not click() {
+
+document.getElementById("font-size").addEventListener("input", function () {
+  const fontSize = document.getElementById("font-size").value;
+  textArea.style.fontSize = fontSize + "px";
+});
